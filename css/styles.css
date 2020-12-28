@@ -1,0 +1,109 @@
+html {
+    align-items: center;
+    background-color: #f7eee4;
+    color: #c5c8c6;
+    display: flex;
+    font: 22px/1 "Inconsolata", monospace;
+    height: 100%; justify-content: center;
+  }
+
+  body {
+    background-color: #1d1f21;
+    border-radius: 2px;
+    box-shadow: 1px 1px 6px #1d1f2187;
+    color: #c5c8c6;
+    display: flex;
+    flex-direction: column;
+    min-height: 30ch;
+    min-width: 50vw;
+    padding: 1em;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p span {
+    color: #cdac81;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:focus,
+  a:hover {
+    font-weight: bold;
+    color: #9dab86;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    column-gap: 2em;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 1em 0;
+  }
+
+  ul:nth-child(5n + 1) li:first-child {
+    color: #c6ebc9;
+  }
+
+  ul:nth-child(5n + 2) li:first-child {
+    color: #de935f;
+  }
+
+  ul:nth-child(5n + 3) li:first-child {
+    color: #f0c674;
+  }
+
+  ul:nth-child(5n + 4) li:first-child {
+    color: #8c9440;
+  }
+
+  ul:nth-child(5n + 5) li:first-child {
+    color: #85678f;
+  }
+
+  li:first-child {
+    font-weight: bold;
+  }
+
+  li:last-child {
+    margin: 0 0 1em;
+  }
+
+  p #cursor {
+    background-color: #cdac81;
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0% { opacity: 0; }
+    49% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+
+  input {
+    background: none;
+    color: #323334;
+    width: 15px;
+    font: inherit;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    transition: .1s; /* uwu */
+  }
+  textarea:focus,
+  input:focus {
+    color: #ebdbb2;
+    outline: none;
+    width: 30%;
+  }
